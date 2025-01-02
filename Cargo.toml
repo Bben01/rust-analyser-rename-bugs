@@ -1,0 +1,15 @@
+[package]
+name = "rust-analyser-rename-bugs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+linkme = "0.3.31"
+serde = { version = "1.0.217", features = ["derive"] }
+static_proc_macro = { path = "static_proc_macro" }
+thiserror = "2.0.9"
+
+[workspace]
+members = [
+    "static_proc_macro"
+]
